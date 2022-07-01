@@ -2,10 +2,7 @@
  import { useState } from 'react'
 import{AiOutlineArrowLeft} from 'react-icons/ai'
 const logo = require("./assets/logo.webp");
-const heroLogo = require("./assets/logo.webp");
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
+
  
  const  Home=()=>{
 const[open,setOpen]=useState(false)
@@ -15,7 +12,7 @@ return(
 
 <AiOutlineArrowLeft onClick={()=>setOpen(!open)} className={`-right-3 top-96 absolute h-[25px] w-[25px]  border-solid cursor-pointer border-2 border-blue-900 rounded-full bg-white duration-500  ${!open && 'rotate-180'}`}/>
 <div>
-<img  src={heroLogo} className='h-[50px] w-[50px]' alt=''></img>
+<img  src={logo} className='h-[50px] w-[50px]' alt=''></img>
 
 </div>
 
